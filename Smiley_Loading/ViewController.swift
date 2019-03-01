@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         self.animationView.isHidden = true
         
     }
-    
+    //Loading with specific
     @IBAction func LoadSpecificEmojisPressed(_ sender: Any) {
         self.view.endEditing(true)
         
@@ -59,6 +59,9 @@ class ViewController: UIViewController {
         
     }
     
+    
+      //Loading with default
+    //Emojis can change now
     @IBAction func ShowAnimation(_ sender: Any) {
         emojis = ["🍜", "☕️", "🍔", "🍕"]
         self.anim = smileyAnimation(frame: self.view.frame)

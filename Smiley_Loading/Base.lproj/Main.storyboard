@@ -30,6 +30,9 @@
                                         <state key="normal" title="   Load Default Emojis   ">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ShowAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awq-Py-JOi"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Emojis" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w48-eg-SIG">
                                         <rect key="frame" x="87.5" y="282" width="200" height="30"/>
@@ -46,6 +49,9 @@
                                         <state key="normal" title="Load Specific Emojis">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="LoadSpecificEmojisPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QBz-Jq-57e"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -74,12 +80,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="txtEmojis" destination="w48-eg-SIG" id="9jc-2P-drO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
     <resources>
-        <image name="smileybackground" width="16" height="16"/>
+        <image name="smileybackground" width="280.55999755859375" height="312"/>
     </resources>
 </document>
